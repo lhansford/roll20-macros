@@ -2,6 +2,7 @@
 
 - Replace `CHARACTER_NAME` with your character name.
 - These all assume the character sheet is [the default D&D 5E sheet from Roll20](https://wiki.roll20.net/D%26D_5E_by_Roll20).
+- In each section the first code block is with line breaks, the second without. Only the second will work in Roll20.
 
 ## Initiative
 
@@ -126,7 +127,11 @@
   {{description=Also starting at 2nd level, you can use an action to heal a creature you can touch. The creature regains hit points equal to your Intelligence modifier + your wizard level (minimum of 1). This feature can restore a creature to no more than half its hit point maximum. Once a creature has regained hit points from this feature, it can’t do so again until it finishes a long rest. [Send to chat](!&#13;#RebukeDeathPublic) }}
 ```
 
-## Rebuke Death
+```rmacro
+/w @{CHARACTER_NAME|character_name}&{template:traits}@{CHARACTER_NAME|charname_output}{{name=Rebuke Death}}{{source=Class: White Necromancer}}{{description=Also starting at 2nd level, you can use an action to heal a creature you can touch. The creature regains hit points equal to your Intelligence modifier + your wizard level (minimum of 1). This feature can restore a creature to no more than half its hit point maximum. Once a creature has regained hit points from this feature, it can’t do so again until it finishes a long rest. [Send to chat](!&#13;#RebukeDeathPublic) }}
+```
+
+### RebukeDeathPublic
 
 ```rmacro
 @{CHARACTER_NAME|wtype}&{template:traits} @{CHARACTER_NAME|charname_output} {{name=Rebuke Death}} {{source=Class: White Necromancer}} {{description=Also starting at 2nd level, you can use an action to heal a creature you can touch. The creature regains hit points equal to your Intelligence modifier + your wizard level (minimum of 1). This feature can restore a creature to no more than half its hit point maximum. Once a creature has regained hit points from this feature, it can’t do so again until it finishes a long rest. }}
