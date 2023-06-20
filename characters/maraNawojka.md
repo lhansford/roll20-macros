@@ -1,3 +1,5 @@
+# Macros
+
 ## Initiative
 
 ```rmacro
