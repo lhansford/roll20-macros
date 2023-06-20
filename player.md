@@ -12,11 +12,11 @@
   {{mod=Dex}}
   {{normal=1}}
   {{r1=[[d20+@{CHARACTER_NAME|initiative_bonus}[DEX] &{CHARACTER_NAME|tracker}]]}}
-  {{charname=Mara}}
+  {{charname=CHARACTER_NAME}}
 ```
 
 ```rmacro
-&{template:simple} {{rname=Initiative}} {{mod=Dex}} {{normal=1}} {{r1=[[d20+@{CHARACTER_NAME|initiative_bonus}[DEX] &{CHARACTER_NAME|tracker}]]}} {{charname=Mara}}
+&{template:simple} {{rname=Initiative}} {{mod=Dex}} {{normal=1}} {{r1=[[d20+@{CHARACTER_NAME|initiative_bonus}[DEX] &{CHARACTER_NAME|tracker}]]}} {{charname=CHARACTER_NAME}}
 ```
 
 ## Skill check
@@ -75,6 +75,8 @@
 
 ## Cantrip
 
+- Keep adding rows under `Cast` to much however many spells you have for this level.
+
 ```rmacro
 /w @{CHARACTER_NAME|character_name}
   &{template:default}
@@ -93,6 +95,8 @@
 ```
 
 ## Level 1 spells
+
+- Keep adding rows under `Cast` to much however many spells you have for this level.
 
 ```rmacro
 /w @{CHARACTER_NAME|character_name}
@@ -206,5 +210,5 @@
 ## Emote
 
 ```rmacro
-/em *?{Mara...|sighs.}*
+/em *?{CHARACTER_NAME...|sighs.}*
 ```
